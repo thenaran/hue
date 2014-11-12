@@ -1,0 +1,150 @@
+/**
+ * Slide in bottom to up with fade in.
+ */
+.nt-slide-in-bottom {
+    -webkit-transform: translateY(30%);
+    -ms-transform: translateY(30%);
+    -o-transform: translateY(30%);
+    transform: translateY(30%);
+    opacity: 0;
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+.nt-slide-show.nt-slide-in-bottom {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*
+ * Fold / UnFold animations.
+ *
+ * Note, don't use PCT and not supported height(use extends).
+ */
+.nt-fold-vertical {
+    overflow: hidden;
+
+    -webkit-transition: max-height 0.4s ease-in-out;
+    -moz-transition: max-height 0.4s ease-in-out;
+    -ms-transition: max-height 0.4s ease-in-out;
+    -o-transition: max-height 0.4s ease-in-out;
+    transition: max-height 0.4s ease-in-out;
+}
+.nt-fold-vertical.nt-fold {
+    max-height: 0;
+}
+
+/*
+ * Hide/Show animation usinb by opacity.
+ */
+.nt-visible {
+    opacity: 1;
+
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
+.nt-hidden {
+    opacity: 0;
+
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
+.nt-visible.nt-hide {
+    opacity: 0;
+}
+.nt-hidden.nt-show {
+    opacity: 1;
+}
+.nt-visible.nt-hide-half {
+    opacity: 0.5;
+}
+.nt-hidden.nt-show-half {
+    opacity: 0.5;
+}
+
+/* Pulse animation. */
+.nt-pulse {
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+
+  opacity: 0;
+}
+.nt-pulse.nt-show {
+  opacity: 1;
+  -webkit-animation: pulse 0.4s forwards ease-in-out;
+  -moz-animation: pulse 0.4s forwards ease-in-out;
+  -ms-animation: pulse 0.4s forwards ease-in-out;
+  -o-animation: pulse 0.4s forwards ease-in-out;
+  animation: pulse 0.4s forwards ease-in-out;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-o-keyframes pulse {
+  0% {
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* Zoom animations */
+.nt-scaleup {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    -moz-transition: -moz-transform0.3s ease-in-out;
+    -ms-transition: -ms-transform 0.3s ease-in-out;
+    -o-transition: -o-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+.nt-scaleup.nt-scaleup-small {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}

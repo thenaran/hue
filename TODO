@@ -1,0 +1,11 @@
+phue
+ => ui to display connected hues
+ => turn on/off, brightness
+    http://anthonyterrien.com/knob/
+ => change color
+    http://automattic.github.io/Iris/
+    http://www.daviddurman.com/flexi-color-picker/#
+ => change color based on image color
+    http://lokeshdhakar.com/projects/color-thief/
+ => rename lights
+    http://www.jqfancyfields.com/how-to-use/

@@ -1,0 +1,28 @@
+{
+    "application": {
+        "description": "(BETA) Manages Philips Hue wirelessly",
+        "language": "english",
+        "author": "Naran Inc.",
+        "url": "http://thenaran.com",
+        "country": "KOR",
+        "labels": [
+            "hue",
+            "lighting"
+        ],
+        "requires": [],
+        "shares": [],
+        "priority": "",
+        "version": "0.2.141110",
+        "devices": [
+            "web"
+        ],
+        "sdk-version": "0.20.140919",
+        "display": "Philips Hue",
+        "name": "hue"
+    },
+    "dependency": {
+        "python": [],
+        "make": [],
+        "system": []
+    }
+}
